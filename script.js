@@ -1,5 +1,14 @@
 // script.js
 
+document.addEventListener('DOMContentLoaded', function() {
+    const dayCounter = document.getElementById('day-counter');
+    const targetDate = new Date('2024-08-15');
+    const currentDate = new Date();
+    const timeDifference = currentDate - targetDate;
+    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    dayCounter.textContent = `Days since August 15th, 2024: ${daysDifference}`;
+});
+
 // Function to handle button click events
 function selectOption(option) {
     // Check which option was clicked
@@ -75,6 +84,7 @@ function displayCatHeart() {
         document.getElementById('options').style.display = 'none';
     };
 }
+
 
 // Display the cat.gif initially
 displayCat();

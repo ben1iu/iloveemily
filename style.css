@@ -1,5 +1,13 @@
 /* style.css */
 
+#day-counter {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-family: 'Sacramento', cursive;
+}
+
 body {
     font-family: Arial, sans-serif; /* Fallback font family */
     text-align: center; /* Center-align text */
